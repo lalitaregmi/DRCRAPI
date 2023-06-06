@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Models.Model
 {
-    public class CreateAccount
+    public class Account
     {
         [Required]
         public string ComID { get; set; }

@@ -9,6 +9,6 @@ namespace Service.Interface
 {
     public interface IChangePassword
     {
-        Task<dynamic> ChangePass(ChangePassword a);
+        Task<dynamic> ChangePass(Password a);
     }
 }

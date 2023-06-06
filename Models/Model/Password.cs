@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Models.Model
 {
-    public class ChangePassword
+    public class Password
     {
         [Required]
      public string UserID { get; set; }

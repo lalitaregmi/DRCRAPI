@@ -8,21 +8,20 @@ namespace DrCrAPI.Controllers
     [Route("api/[Controller] "), EnableCors("CorsPolicy")]
     [ApiController]
 
-    public class CreateCompanyController : ControllerBase
+    public class AccountController : ControllerBase
     {
         private readonly IUnitOfWork _unitOfWork;
-        public CreateCompanyController(IUnitOfWork unitOfWork)
+        public AccountController(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
         }
         [HttpPost] //Post annotation  is for create 
-        [Route("~/api/admin/company")] // harek controller ko end point farak huna parxa.
-        public async Task<dynamic> CreateCompany(CreateCompany category) //
+        [Route("~/api/admin/account")] // harek controller ko end point farak huna parxa.
+        public async Task<dynamic> CreateAcc(Account category) //
         {
-            var data = await _unitOfWork.createcomservice.CreateCom(category);
+            var data = await _unitOfWork.createaccservice.CreateAcc(category);
             // iunit of work ma declare gareko property le service ko method(BlogCat) call.
             return Ok(data);
-
         }
     }
 }

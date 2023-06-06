@@ -2,17 +2,18 @@
 using Helper.Dapper;
 using Models.Model;
 using Service.Interface;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Service.Service
 {
     public class CreateAccountService:ICreateAccount
     {
-        public async Task<dynamic> CreateAcc(CreateAccount a)
+
+        public String convertToNepali(String engDate)
+        {
+
+            return engDate;
+        }
+        public async Task<dynamic> CreateAcc(Account a)
         {
             var res = new ResValues();
             if (a.Status != "")
@@ -28,11 +29,15 @@ namespace Service.Service
                 parameters.Add("@comid", a.ComID);
                 parameters.Add("@userid", a.UserID);
                 parameters.Add("@flag", a.Flag);
-                parameters.Add("@date", a.Date);
+                
                 parameters.Add("@particulars", a.Particulars);
                 parameters.Add("@dramt", a.DrAmt);
                 parameters.Add("@cramt", a.CrAmt);
                 parameters.Add("@status", a.Status);
+                parameters.Add("@date", a.Date);
+                parameters.Add("@nepdate", convertToNepali(a.Date));
+
+            
 
                 var data = await DbHelper.RunProc<dynamic>(sql, parameters); // it run the stored procedure with the help of DbHelper and pass result to the data.
                 if (data.Count() != 0 && data.FirstOrDefault().Message == null) //yei condition true since data contain (sql and parameter) 

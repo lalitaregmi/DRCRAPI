@@ -8,20 +8,22 @@ namespace DrCrAPI.Controllers
     [Route("api/[Controller] "), EnableCors("CorsPolicy")]
     [ApiController]
 
-    public class CreateAccountController : ControllerBase
+    public class PasswordController : ControllerBase
     {
+
         private readonly IUnitOfWork _unitOfWork;
-        public CreateAccountController(IUnitOfWork unitOfWork)
+        public PasswordController(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
         }
         [HttpPost] //Post annotation  is for create 
-        [Route("~/api/admin/account")] // harek controller ko end point farak huna parxa.
-        public async Task<dynamic> CreateAcc(CreateAccount category) //
+        [Route("~/api/change-password")] // harek controller ko end point farak huna parxa.
+        public async Task<dynamic> CreatePassword(Password category) //
         {
-            var data = await _unitOfWork.createaccservice.CreateAcc(category);
+            var data = await _unitOfWork.changepassservice.ChangePass(category);
             // iunit of work ma declare gareko property le service ko method(BlogCat) call.
             return Ok(data);
         }
+
     }
 }

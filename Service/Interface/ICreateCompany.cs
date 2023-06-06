@@ -9,6 +9,6 @@ namespace Service.Interface
 {
     public interface ICreateCompany
     {
-        Task<dynamic> CreateCom(CreateCompany a);
+        Task<dynamic> CreateCom(Company a);
     }
 }

@@ -12,7 +12,7 @@ namespace Service.Service
 {
     public class CreateCompanyService:ICreateCompany
     {
-        public async Task<dynamic> CreateCom(CreateCompany a)
+        public async Task<dynamic> CreateCom(Company a)
         {
             var res = new ResValues();
             if (a.Status != "")

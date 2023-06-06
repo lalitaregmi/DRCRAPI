@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrCrAPI", "DrCrAPI\DrCrAPI.csproj", "{4576B645-B786-4294-B475-22E361AA9379}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DrCrAPI", "DrCrAPI\DrCrAPI.csproj", "{4576B645-B786-4294-B475-22E361AA9379}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helper", "Helper\Helper.csproj", "{FE9C3A44-7B28-4B46-B88C-71A9F2D03AF6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Helper", "Helper\Helper.csproj", "{FE9C3A44-7B28-4B46-B88C-71A9F2D03AF6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{A2FA928E-2443-440C-9E2A-59AD1BC53802}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models", "Models\Models.csproj", "{A2FA928E-2443-440C-9E2A-59AD1BC53802}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{2849774A-2A69-43AB-A7BE-BFE78E265041}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service", "Service\Service.csproj", "{2849774A-2A69-43AB-A7BE-BFE78E265041}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -12,7 +12,7 @@ namespace Service.Service
 {
     public class ChangePasswordService:IChangePassword
     {
-        public async Task<dynamic> ChangePass(ChangePassword a) 
+        public async Task<dynamic> ChangePass(Password a) 
         {
             var res = new ResValues(); 
             if (a.Status != "")

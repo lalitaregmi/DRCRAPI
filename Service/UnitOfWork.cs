@@ -33,6 +33,9 @@ namespace Service
         public ChangePasswordService changepassservice => new ChangePasswordService();// BlogCategoryService() obj blogservice ma pass so blogservice controller ma use gare paxi BlogCategoryService() sab method controller le access garna pauxa
         public CreateCompanyService createcomservice => new CreateCompanyService();
         public CreateAccountService createaccservice => new CreateAccountService();
+        public LoginService LoginService => new LoginService();
+        public ReferenceService ReferenceService { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public UserService userService => new UserService();
     }
 }
     

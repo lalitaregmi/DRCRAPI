@@ -9,6 +9,6 @@ namespace Service.Interface
 {
     public interface ICreateAccount
     {
-        Task<dynamic> CreateAcc(CreateAccount a);
+        Task<dynamic> CreateAcc(Account a);
     }
 }
