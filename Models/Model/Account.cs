@@ -20,7 +20,7 @@ namespace Models.Model
         public string Particulars { get; set; }
         public string DrAmt { get; set; }
         public string CrAmt { get; set; }
-        public string Status { get; set; }
+      
     }
     }
 

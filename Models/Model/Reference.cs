@@ -10,13 +10,13 @@ namespace Models.Model
     public class Reference
     {
 
-        [Required]
+       
         public string Category { get; set; }
-
+        
         public string Flag { get; set; }
+       
         public string IsActive { get; set; }
-        public string Name { get; set; }
-        public string UserID { get; set; }
+       public string UserID { get; set; }
 
 
 

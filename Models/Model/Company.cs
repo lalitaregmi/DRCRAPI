@@ -24,6 +24,6 @@ namespace Models.Model
 
         public string Description { get; set; }
         public string IsActive { get; set; }
-        public string Status { get; set; }
+       
     }
 }

@@ -18,9 +18,9 @@ namespace DrCrAPI.Controllers
         }
         [HttpPost] //Post annotation  is for create 
         [Route("~/api/change-password")] // harek controller ko end point farak huna parxa.
-        public async Task<dynamic> CreatePassword(Password category) //
+        public async Task<dynamic> CreatePassword(Password pass) //
         {
-            var data = await _unitOfWork.changepassservice.ChangePass(category);
+            var data = await _unitOfWork.changepassservice.ChangePass(pass);
             // iunit of work ma declare gareko property le service ko method(BlogCat) call.
             return Ok(data);
         }

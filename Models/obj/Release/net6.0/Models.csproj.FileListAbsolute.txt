@@ -1,0 +1,15 @@
+C:\Users\HP\source\repos\DrCrAPI\Models\bin\Release\net6.0\Models.deps.json
+C:\Users\HP\source\repos\DrCrAPI\Models\bin\Release\net6.0\Models.dll
+C:\Users\HP\source\repos\DrCrAPI\Models\bin\Release\net6.0\Models.pdb
+C:\Users\HP\source\repos\DrCrAPI\Models\bin\Release\net6.0\Helper.dll
+C:\Users\HP\source\repos\DrCrAPI\Models\bin\Release\net6.0\Helper.pdb
+C:\Users\HP\source\repos\DrCrAPI\Models\obj\Release\net6.0\Models.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\DrCrAPI\Models\obj\Release\net6.0\Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\source\repos\DrCrAPI\Models\obj\Release\net6.0\Models.AssemblyInfoInputs.cache
+C:\Users\HP\source\repos\DrCrAPI\Models\obj\Release\net6.0\Models.AssemblyInfo.cs
+C:\Users\HP\source\repos\DrCrAPI\Models\obj\Release\net6.0\Models.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\DrCrAPI\Models\obj\Release\net6.0\Models.csproj.CopyComplete
+C:\Users\HP\source\repos\DrCrAPI\Models\obj\Release\net6.0\Models.dll
+C:\Users\HP\source\repos\DrCrAPI\Models\obj\Release\net6.0\refint\Models.dll
+C:\Users\HP\source\repos\DrCrAPI\Models\obj\Release\net6.0\Models.pdb
+C:\Users\HP\source\repos\DrCrAPI\Models\obj\Release\net6.0\ref\Models.dll

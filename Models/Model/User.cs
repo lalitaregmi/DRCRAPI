@@ -11,10 +11,15 @@ namespace Models.Model
     {
         [Required]
         public string UserName { get; set; }
+        [Required]
         public string Password { get; set; }
+        [Required]
         public string Flag { get; set; }
+        [Required]
         public string IsActive { get; set; }
+        [Required]
         public string Name { get; set; }
+        [Required]
         public string UserID { get; set; }
 
 

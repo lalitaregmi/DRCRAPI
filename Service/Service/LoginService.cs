@@ -13,24 +13,19 @@ using System.Threading.Tasks;
 
 namespace Service.Service
 {
-    public class LoginService : Interfacelogin
+    public class LoginService : Ilogin
     {
 
         public async Task<dynamic> Login(Login l) // a request
         {
             var res = new ResValues(); //model class ko obj pass to res(response variable)
-            if (l.Status != "")
-            {
-                res.Values = null;
-                res.StatusCode = 400;
-                res.Message = " l is empty";
-            }
-            else
+            
+            
             {
                 var sql = "sp_login"; // var is data type not integer "sp_blog" is store procedure name.
                 var parameters = new DynamicParameters(); // this is inbuilt class(Dapper ko class) yo class store procedure ma parameter pathauana use hunxa. so yasko obj refrence variable ma pathako
                                                           // model ma banako prop(req) lai service bata server ma pathauna @ use garne
-                parameters.Add("@primary", l); // it add @primary property to the parameters
+                // it add @primary property to the parameters
                 parameters.Add("@UserName", l.UserName);
                 parameters.Add("@Password", l.Password);
 
@@ -65,7 +60,5 @@ namespace Service.Service
 
     }
 
-    public class Interfacelogin
-    {
-    }
+    
 }

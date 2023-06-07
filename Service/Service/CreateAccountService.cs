@@ -16,15 +16,9 @@ namespace Service.Service
         public async Task<dynamic> CreateAcc(Account a)
         {
             var res = new ResValues();
-            if (a.Status != "")
+            
             {
-                res.Values = null;
-                res.StatusCode = 400;
-                res.Message = " a is empty";
-            }
-            else
-            {
-                var sql = "sp_tbl_dr_cr";
+                var sql = "sp_tbl_com";
                 var parameters = new DynamicParameters();
                 parameters.Add("@comid", a.ComID);
                 parameters.Add("@userid", a.UserID);
@@ -33,7 +27,7 @@ namespace Service.Service
                 parameters.Add("@particulars", a.Particulars);
                 parameters.Add("@dramt", a.DrAmt);
                 parameters.Add("@cramt", a.CrAmt);
-                parameters.Add("@status", a.Status);
+               
                 parameters.Add("@date", a.Date);
                 parameters.Add("@nepdate", convertToNepali(a.Date));
 

@@ -15,14 +15,7 @@ namespace Service.Service
         public async Task<dynamic> CreateCom(Company a)
         {
             var res = new ResValues();
-            if (a.Status != "")
-            {
-                res.Values = null;
-                res.StatusCode = 400;
-                res.Message = " a is empty";
-            }
-            else
-            {
+                        {
                 var sql = "sp_tbl_com";
                 var parameters = new DynamicParameters();
                 parameters.Add("@comid", a.ComID);
@@ -35,7 +28,7 @@ namespace Service.Service
                 parameters.Add("@category", a.Category);
                 parameters.Add("@description", a.Description);
                 parameters.Add("@isactive", a.IsActive);
-                parameters.Add("@status", a.Status);
+                
 
                 var data = await DbHelper.RunProc<dynamic>(sql, parameters); // it run the stored procedure with the help of DbHelper and pass result to the data.
                 if (data.Count() != 0 && data.FirstOrDefault().Message == null) //yei condition true since data contain (sql and parameter) 

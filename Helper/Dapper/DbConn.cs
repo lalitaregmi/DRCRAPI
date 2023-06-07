@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Helper.Dapper
 {
-    internal class DbConn
+    public  class DbConn
     {
+        public static string connectionstring { get; set; }
     }
 }

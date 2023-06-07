@@ -10,13 +10,13 @@ namespace Models.Model
     public class Password
     {
         [Required]
-     public string UserID { get; set; }
+        public string UserID { get; set; }
         [Required]
         public string OldPwd { get; set; }
         [Required]
         public string NewPwd { get; set; }
-        [Required]
-        public string Status { get; set; }
+        
+        
     }
     public class ResValues : CommonResponse // for request all req lai yautai response le kam garxa but req chai end point anusar diff.
     {

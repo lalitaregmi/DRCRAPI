@@ -19,18 +19,13 @@ namespace Service.Service
         public async Task<dynamic> CreateReference(Reference r) // a request
         {
             var res = new ResValues(); //model class ko obj pass to res(response variable)
-            if (r.Status != "")
+            
+            
             {
-                res.Values = null;
-                res.StatusCode = 400;
-                res.Message = " r is empty";
-            }
-            else
-            {
-                var sql = "sp_user"; // var is data type not integer "sp_blog" is store procedure name.
+                var sql = "sp_ref_values"; // var is data type not integer "sp_blog" is store procedure name.
                 var parameters = new DynamicParameters(); // this is inbuilt class(Dapper ko class) yo class store procedure ma parameter pathauana use hunxa. so yasko obj refrence variable ma pathako
                 parameters.Add("@flag", r.Flag); // model ma banako prop(req) lai service bata server ma pathauna @ use garne
-                parameters.Add("@primary", r); // it add @primary property to the parameters
+                
                 parameters.Add("@IsActive", r.IsActive);
                 parameters.Add("@UserID", r.UserID);
                 parameters.Add("@Category", r.Category);

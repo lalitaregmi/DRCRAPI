@@ -11,8 +11,9 @@ namespace Models.Model
     {
         [Required]
         public string UserName { get; set; }
+        [Required]
         public string Password { get; set; }
-        public string Status { get; set; }
+        
     }
     //class which hold list of model and inherit other class
     /*public class ResponseValues : CommonResponse

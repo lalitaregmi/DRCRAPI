@@ -15,7 +15,7 @@ namespace Helper.Dapper
 
         public static SqlConnection GetConnection()
         {
-            String ConnectionStrings = "Server=DESKTOP-IC5S7IR\\;database=APIDB;Security=true\\"; // this line connect the app with db. app setting ma xuttai lekhirakhna pardaina.
+            String ConnectionStrings = "Server=DESKTOP-IC5S7IR\\;database=DrCrApp;Security=true\\"; // this line connect the app with db. app setting ma xuttai lekhirakhna pardaina.
             var sqlconnection = new SqlConnection(ConnectionStrings);
             sqlconnection.Open();
             return sqlconnection;
